@@ -16,7 +16,7 @@ foreach ( $files as $file ) {
 // Set the content type, filesize and an expiration so its not cached
 header('Content-Type: ' . $type);
 header('Content-Length: ' . strlen($contents));
-header('Expires: Fri, 01 Jan 2010 05:00:00 GMT');
+header('Expires: Fri, 01 Jan 2015 05:00:00 GMT');
 
 // Deliver the file
 echo $contents;

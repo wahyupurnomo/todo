@@ -9,17 +9,33 @@
 	</script>
 	</head> 
 	<body onload="onBodyLoad()"> 
+	<div id="page1" data-role="page">
+
+	<!-- default panel  -->
+	<div data-role="panel" id="info" data-position="left" data-display="reveal">
+<ul data-role="listview" data-filter="true" 
+data-filter-placeholder="Search fruits..." data-inset="true">
+    <li><a href="#">Apple</a></li>
+    <li><a href="#">Banana</a></li>
+    <li><a href="#">Cherry</a></li>
+    <li><a href="#">Grape</a></li>
+    <li><a href="#">Orange</a></li>
+</ul>
+
+	</div><!-- /default panel -->
+
+	
 		<div data-role="header" data-position="inline" data-theme="b">
 			<a href="#" data-theme="c" data-icon="delete" iconpos="notext" data-position="inline" data-rel="dialog" id="clear">Clear</a>
 			<h1>TODO</h1>
-			<a href="add_todo.html" data-icon="plus" iconpos="notext" data-position="inline" data-rel="dialog">Add</a>
+			<a href="add_todob.html" data-icon="plus" iconpos="notext" data-position="inline" data-rel="dialog">Add</a>
 		</div><p>
 		<div class="content-primary" style="margin:3px;">	
 			<ul data-role="listview" data-inset="true" data-split-icon="minus" data-split-theme="d" id="todo_list">
 			</ul>
 		</div>	
 		<div data-role="footer" data-position="fixed" data-theme="b" style="text-align:center;padding:5px 0px;">
-			<a href="http://www.amitpatil.me/?s=iphone+ipad" data-theme="b" data-icon="star">More iphone Apps</a>
+			<a href="http://www.amitpatil.me/?s=iphone+ipad" data-theme="b" data-icon="star">More iphone Apps</a><a href="#info">Info</a>
 		</div> 
 	</body>
 </html>
